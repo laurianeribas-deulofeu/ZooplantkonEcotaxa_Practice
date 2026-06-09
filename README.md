@@ -64,8 +64,7 @@
 <p>Each `.zip` archive contains:</p>
 
 <div class="file-tree">
-BIO24_P150.stsa12_YYYY-M-D.*/<br>
-├── *.jpg                    # Segmented organism images (JPEG)<br>
+├── *.jpg                    # Segmented images (JPEG)<br>
 ├── SampleName.tsv           # Morphological features table (EcoTaxa format)<br>
 └── SampleNAme.zim           # ZooImage metadata file<br>
 </div>
@@ -74,7 +73,7 @@ BIO24_P150.stsa12_YYYY-M-D.*/<br>
 
 <h3>Feature table format</h3>
 
-<p>The `.tsv` files follow the **EcoTaxa import format**: each row is one object (segmented organism), with the first two header rows specifying column names and data types. Columns include object-level morphological descriptors (area, perimeter, Feret diameter, grey-level statistics, etc.) computed by ZooImage from the scanned images.</p>
+<p>The `.tsv` files follow the **EcoTaxa import format**: each row is one object (segmented images), with the first two header rows specifying column names and data types. Columns include object-level morphological descriptors (area, perimeter, Feret diameter, grey-level statistics, etc.) computed by ZooImage from the scanned images.</p>
 
 <p>The `.zim` files store ZooImage-specific metadata and are required for re-processing or re-classifying images directly in ZooImage.</p>
 
@@ -84,11 +83,11 @@ BIO24_P150.stsa12_YYYY-M-D.*/<br>
 
 <p>Working with these samples, students can practise:
 
-- **AI-assisted identification** — upload `.tsv` files to EcoTaxa and apply a pre-trained classifier, or use ZooImage's built-in random forest classifier
-- **Manual validation** — review and correct AI predictions image by image to build a ground-truth dataset
-- **Community description** — compute taxon-level and sample-level summaries (abundance, relative composition)
-- **Biodiversity metrics** — calculate Hill numbers (q = 0, 1, 2), total abundance, and biomass estimates
-- **Temporal analysis** — compare community structure across seasons and decades using a real long-term dataset
+- **AI-assisted identification** — upload `.tsv` files to EcoTaxa and apply a pre-trained classifier, or use ZooImage's built-in random forest classifier.
+- **Manual validation** — review and correct AI predictions image by image to build a ground-truth dataset.
+- **Community description** — compute taxon-level and sample-level summaries (abundance, relative composition).
+- **Biodiversity metrics** — calculate Hill numbers (q = 0, 1, 2), total abundance, and biomass estimates.
+- **Temporal analysis** — compare community structure across seasons and decades using a real long-term dataset.
 </p>
 
 <h2>Getting started</h2>
@@ -97,22 +96,16 @@ BIO24_P150.stsa12_YYYY-M-D.*/<br>
 <pre><code>git clone https://github.com/laurianeribas-deulofeu/ZooplantkonEcotaxa_Practice</code></pre>
 <p>Or click <strong>Code → Download ZIP</strong> and unzip locally.</p>
 
-
-
-<h3> 2. Unzip sample archives</h3>
-
-<p>Each sample is stored as a `.zip` in the `samples/` folder.</p>
-
-<h3> 3. EcoTaxa workflow</h3>
+<h3> 2. EcoTaxa workflow</h3>
 <p>
 <ul>
-<li>1. Create a free account at<a href="https://ecotaxa.obs-vlfr.fr">ecotaxa.obs-vlfr.fr</a> </li>
-<li>2. Create a new project and import your samples</li>
-<li>3. Apply a pre-trained zooplankton classifier from the available list</li>
-<li>4. Export prediction results for later classifier performance evaluation</li>
-<li>5. Validate predictions and export results</li>
-<li>6. Evaluate classifier results using code available at <a href="https://github.com/laurianeribas-deulofeu/Basic-AI-model-evaluation-Demo"> laurianeribas-deulofeu/Basic-AI-model-evaluation-Demo</a> </li>
-<li>7. Re-train & re-evaluate. Always export prediction results before re-training, as predictions will be erased on validated pictures, preventing you to access these info later on and therefore preventing re-evaluation of your classifier</li>
+<li>1. Create a free account at<a href="https://ecotaxa.obs-vlfr.fr">ecotaxa.obs-vlfr.fr</a>. </li>
+<li>2. Create a new project and import your samples.</li>
+<li>3. Apply a pre-trained zooplankton classifier from the available list.</li>
+<li>4. Export prediction results for later classifier performance evaluation.</li>
+<li>5. Validate predictions and export results.</li>
+<li>6. Evaluate classifier results using code available at <a href="https://github.com/laurianeribas-deulofeu/Basic-AI-model-evaluation-Demo"> laurianeribas-deulofeu/Basic-AI-model-evaluation-Demo</a>. </li>
+<li>7. Re-train & re-evaluate. Always export prediction results before re-training, as predictions will be erased on validated pictures, preventing you to access these info later on and therefore preventing re-evaluation of your classifier.</li>
 </ul>
 </p>
 <hr>
@@ -150,11 +143,11 @@ Key metrics to calculate:
 <p>
 By working with these materials, students will be able to:
 <ul>
-<li>1. Import zooplankton scan data into EcoTaxa or ZooImage and apply an AI classifier</li>
-<li>2. Critically validate AI-predicted identifications using reference images</li>
-<li>3. Construct a species-by-sample abundance matrix from validated annotations</li>
-<li>4. Calculate Hill numbers, abundance, and biomass estimates in R</li>
-<li>5. Interpret your results</li>
+<li>1. Import zooplankton scan data into EcoTaxa or ZooImage and apply an AI classifier.</li>
+<li>2. Critically validate AI-predicted identifications using reference images.</li>
+<li>3. Construct a confusion matrix and estimate classifier performance metrics.</li>
+<li>4. Calculate Hill numbers, abundance, and biomass estimates in R.</li>
+<li>5. Interpret your results.</li>
 </ul>
 <p>
 <hr>
