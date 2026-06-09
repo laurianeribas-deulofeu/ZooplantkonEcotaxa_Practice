@@ -45,7 +45,6 @@
 <h3>Files in this repository</h3>
 <div class="file-tree">
 ├── README.md<br>
-├── samples/<br>
 ├── BIO24_P150.stsa12_1983-2-7.4.zip     # One zip per sample (see structure below) [stsa12= Sampling station in Saltfjord; YYYY-M-D= Sampling date; other part of the sample name refers to internal label standards not relevant to use these samples]<br>
 ├── BIO24_P150.stsa12_1986-1-30.8.zip<br>
 ├── BIO24_P150.stsa12_1986-1-30.8.zip<br>
