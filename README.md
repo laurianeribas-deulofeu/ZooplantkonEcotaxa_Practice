@@ -12,7 +12,7 @@
 
 <h2>Overview</h2>
 
-<p>This repository contains demo materials for practising building AI classifeir for zooplankton taxa identification, community description, and biodiversity metrics calculation using real splitted plankton net samples from a long-term monitoring programme in Saltfjord, Norway.<p>
+<p>This repository contains demo materials for practising building an AI classifier for zooplankton taxa identification, community description, and biodiversity metrics calculation using real, split plankton net samples from a long-term monitoring programme in Saltfjord, Norway.<p>
 
 <p>The dataset consists of 11 samples spanning nearly four decades (1983–2021), randomly selected from a 43-year time series. Each sample contains segmented zooplankton images (>180 µm) and associated morphological feature tables, ready for upload to EcoTaxa (.tsv) or direct use in ZooImage (.zim).<p>
 
@@ -46,7 +46,7 @@
 <div class="file-tree">
 ├── README.md<br>
 ├── samples/<br>
-├── BIO24_P150.stsa12_1983-2-7.4.zip     # One zip per sample (see structure below) [stsa12= Sampling station in Saltfjord; YYYY-M-D= Sampling date; other part of the sample name refer to internal label standards no relevant to use these samples]<br>
+├── BIO24_P150.stsa12_1983-2-7.4.zip     # One zip per sample (see structure below) [stsa12= Sampling station in Saltfjord; YYYY-M-D= Sampling date; other part of the sample name refers to internal label standards not relevant to use these samples]<br>
 ├── BIO24_P150.stsa12_1986-1-30.8.zip<br>
 ├── BIO24_P150.stsa12_1986-1-30.8.zip<br>
 ├── BIO24_P150.stsa12_1988-3-1.10.zip<br>
@@ -113,7 +113,7 @@ BIO24_P150.stsa12_YYYY-M-D.*/<br>
 <li>4. Export prediction results for later classifier performance evaluation</li>
 <li>5. Validate predictions and export results</li>
 <li>6. Evaluate classifier results using code available at <a href="https://github.com/laurianeribas-deulofeu/Basic-AI-model-evaluation-Demo"> laurianeribas-deulofeu/Basic-AI-model-evaluation-Demo</a> </li>
-<li>7. Re-train & re-evaluate. Always export predictions results before re-training, as predictions will be erased on validated pictures preventing you to access these info later on and therefore preventing re-evaluation of your classifer</li>
+<li>7. Re-train & re-evaluate. Always export prediction results before re-training, as predictions will be erased on validated pictures, preventing you to access these info later on and therefore preventing re-evaluation of your classifier</li>
 </ul>
 </p>
 <hr>
